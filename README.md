@@ -1,6 +1,6 @@
 # Standardized Repository for Order Batching Problem Instances
 
-**OBP-Instances** is an open-source collection of all known instances from the academic literature on the *Order Batching Problem (OBP)*.  
+**OBP-Instances** is an open-source collection of all known instances from the academic literature on the *Order Batching Problem (OBP)*. 
 All instances are transformed into a unified, machine-readable **JSON** format to ensure consistency and ease of use.
 
 In addition to being a standardized dataset hub, this project provides a basic testing environment and interactive visualization tools to evaluate batching and routing algorithms commonly used in warehouse operations.
@@ -25,6 +25,19 @@ This tool is ideal for:
 - Educators teaching order picking and warehouse optimization.
 - Developers testing algorithmic approaches in a controlled environment.
 
+
+## ✨ API Documentation
+
+You can browse the full Javadoc documentation for this project online at:
+
+<p align="center"><a target="javadoc" href="https://sergiogilborras.github.io/instancesOBP/target/site/apidocs/index.html"><strong>[Ver Javadoc]</strong></a></p>
+
+This documentation is automatically generated and published and it includes:
+
+- Class descriptions
+- Method usage
+- Data structures and models used in the OBP instances
+- Useful utilities for loading, evaluating and visualizing instances
 ---
 
 ## JSON Schema Documentation
