@@ -40,6 +40,14 @@ This documentation is automatically generated and published and it includes:
 - Useful utilities for loading, evaluating and visualizing instances
 
 
+### 🙌 Contributors
+
+- **Sergio Gil-Borrás** – 🛠️ Development, 📚 Documentation, 🧠 Project concept, 🎨 Instance visualization
+- **Pablo E. Socop Miranda** – 🛠️ Development, 📚 Documentation, 🧾 Usage tutorials
+- **Eduardo G. Pardo** – ✅ Content review, 🧪 Results validation, 💡 Feature proposals
+
+
+
 ---
 
 ---
