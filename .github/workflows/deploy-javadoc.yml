@@ -3,7 +3,7 @@ name: Publicar Javadoc en GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   contents: write
