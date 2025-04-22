@@ -1,0 +1,22 @@
+-encoding
+'UTF-8'
+-protected
+--release
+21
+-sourcepath
+'C:/Users/Sergio/Documents/NetBeansProjects/InstancesOBP/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Sergio/Documents/NetBeansProjects/InstancesOBP/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'InstancesOBP Project 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'InstancesOBP Project 1.0-SNAPSHOT API'

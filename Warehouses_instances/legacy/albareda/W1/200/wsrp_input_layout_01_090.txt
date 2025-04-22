@@ -1,0 +1,22 @@
+ Numero de pasillos e items
+ 4 240
+ Colocacion  mesa 
+ 1
+ Localizacion pedidos 
+ 1
+ largo y ancho de las estanterias
+ 86.916667 3.583333
+ ancho de los pasillos
+ 3.583333
+ Capacidad de cada trabajador
+ 12.000000
+ Tiempo de picking
+ 0.000000
+ Tiempo de giro (fuera y dentro)
+ 0.000000 0.000000
+ pasillo, distancia al origen: derecho, izquierdo,lado al que está
+ 0 10.750000 10.750000 -1
+ 1 3.583333 3.583333 -1
+ 2 3.583333 3.583333 1
+ 3 10.750000 10.750000 1
+ 9999
