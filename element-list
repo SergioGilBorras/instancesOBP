@@ -1,0 +1,13 @@
+com.instancesobp
+com.instancesobp.batchingAlgorithm
+com.instancesobp.batchingAlgorithm.constructiveHeuristic
+com.instancesobp.batchingAlgorithm.sortOrderList
+com.instancesobp.evaluationResults.graphics
+com.instancesobp.evaluationResults.graphics.algorithms
+com.instancesobp.instancesGenerator
+com.instancesobp.instancesReader.json
+com.instancesobp.instancesReader.legacy
+com.instancesobp.models
+com.instancesobp.objectiveFunction
+com.instancesobp.routingAlgorithm
+com.instancesobp.utils
