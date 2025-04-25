@@ -106,7 +106,7 @@ public class InstancesLoaderAlbareda {
         List<Aisles> aisles = new ArrayList<>();
 
         // Construct layout file path
-        String layoutFile = "./Warehouses_instances/legacy/albareda/W" +
+        String layoutFile = "./Warehouses_instances/legacy/W1-W2-W3-W4_Albareda/W" +
                 consoleInfo.getWarehouseNumber() +
                 "/" +
                 consoleInfo.getBatchesNumber() +
@@ -117,7 +117,7 @@ public class InstancesLoaderAlbareda {
                 ".txt";
 
         // Construct order file path
-        String orderFile = "./Warehouses_instances/legacy/albareda/W" +
+        String orderFile = "./Warehouses_instances/legacy/W1-W2-W3-W4_Albareda/W" +
                 consoleInfo.getWarehouseNumber() +
                 "/" +
                 consoleInfo.getBatchesNumber() +
