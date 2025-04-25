@@ -231,7 +231,7 @@ public class ReadConsoleInfo {
      * item order and setting.
      */
     public void getNumberOrdersHenn() {
-        File folder = new File("./Warehouses_instances/legacy/henn/" + itemLocationString);
+        File folder = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString);
         if (!folder.isDirectory()) {
             System.out.println("Error: The entered path is not a valid directory " + folder.getAbsolutePath());
         } else if (folder.listFiles() == null) {
@@ -239,7 +239,7 @@ public class ReadConsoleInfo {
         } else {
             for (final File fileEntry : Objects.requireNonNull(folder.listFiles())) {
                 if (!fileEntry.isDirectory() && (fileEntry.getName().contains(settingNumber + "s") || fileEntry.getName().contains(settingNumber + "l"))) {
-                    String filePath = "./Warehouses_instances/legacy/henn/" + itemLocationString + "/" + fileEntry.getName();
+                    String filePath = "./Warehouses_instances/legacy/W5_Henn/" + itemLocationString + "/" + fileEntry.getName();
                     String[] fileParts = filePath.split("-");
                     this.batchNumber = parseInt(fileParts[1]);
                 }
@@ -253,7 +253,7 @@ public class ReadConsoleInfo {
      */
     public final void selectSettingNumber() {
         System.out.println("Choose a setting number: ");
-        File folder = new File("./Warehouses_instances/legacy/henn/" + itemLocationString);
+        File folder = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString);
         if (!folder.isDirectory()) {
             System.out.println("Error: The entered path is not a valid directory " + folder.getAbsolutePath());
             return;
@@ -270,7 +270,7 @@ public class ReadConsoleInfo {
         System.out.print(">\n");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int W = parseInt(br.readLine());
-            File settingFile = new File("./Warehouses_instances/legacy/henn/" + itemLocationString + "/sett" + W + ".txt");
+            File settingFile = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString + "/sett" + W + ".txt");
             if (!settingFile.exists()) {
                 System.out.println("Error: Enter a valid number.");
                 selectSettingNumber();
