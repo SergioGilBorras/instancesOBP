@@ -1,0 +1,4571 @@
+{
+  "NameInstanceSet" : "A_W3_50_030",
+  "URL" : "",
+  "Papers" : [ ],
+  "InstanceSet" : [ {
+    "Layout" : [ {
+      "numberOfAisles" : 25,
+      "numberOfItems" : 662,
+      "numberOfSlots" : 1250,
+      "depotPlacement" : 0,
+      "orderLocation" : 0,
+      "shelfLength" : 63.875,
+      "shelfWidth" : 2.25,
+      "aisleWidth" : 2.25,
+      "crossAisles" : 0,
+      "workerCapacity" : 150.0,
+      "pickingTime" : 0.0,
+      "outsideTurnTime" : 20.0,
+      "insideTurnTime" : 0.0,
+      "travelSpeed" : 1.0,
+      "aisles" : [ {
+        "aisleId" : 0,
+        "distanceFromOriginRight" : 0.0,
+        "distanceFromOriginLeft" : 0.0,
+        "side" : 0
+      }, {
+        "aisleId" : 1,
+        "distanceFromOriginRight" : 4.5,
+        "distanceFromOriginLeft" : 4.5,
+        "side" : 1
+      }, {
+        "aisleId" : 2,
+        "distanceFromOriginRight" : 9.0,
+        "distanceFromOriginLeft" : 9.0,
+        "side" : 1
+      }, {
+        "aisleId" : 3,
+        "distanceFromOriginRight" : 13.5,
+        "distanceFromOriginLeft" : 13.5,
+        "side" : 1
+      }, {
+        "aisleId" : 4,
+        "distanceFromOriginRight" : 18.0,
+        "distanceFromOriginLeft" : 18.0,
+        "side" : 1
+      }, {
+        "aisleId" : 5,
+        "distanceFromOriginRight" : 22.5,
+        "distanceFromOriginLeft" : 22.5,
+        "side" : 1
+      }, {
+        "aisleId" : 6,
+        "distanceFromOriginRight" : 27.0,
+        "distanceFromOriginLeft" : 27.0,
+        "side" : 1
+      }, {
+        "aisleId" : 7,
+        "distanceFromOriginRight" : 31.5,
+        "distanceFromOriginLeft" : 31.5,
+        "side" : 1
+      }, {
+        "aisleId" : 8,
+        "distanceFromOriginRight" : 36.0,
+        "distanceFromOriginLeft" : 36.0,
+        "side" : 1
+      }, {
+        "aisleId" : 9,
+        "distanceFromOriginRight" : 40.5,
+        "distanceFromOriginLeft" : 40.5,
+        "side" : 1
+      }, {
+        "aisleId" : 10,
+        "distanceFromOriginRight" : 45.0,
+        "distanceFromOriginLeft" : 45.0,
+        "side" : 1
+      }, {
+        "aisleId" : 11,
+        "distanceFromOriginRight" : 49.5,
+        "distanceFromOriginLeft" : 49.5,
+        "side" : 1
+      }, {
+        "aisleId" : 12,
+        "distanceFromOriginRight" : 54.0,
+        "distanceFromOriginLeft" : 54.0,
+        "side" : 1
+      }, {
+        "aisleId" : 13,
+        "distanceFromOriginRight" : 58.5,
+        "distanceFromOriginLeft" : 58.5,
+        "side" : 1
+      }, {
+        "aisleId" : 14,
+        "distanceFromOriginRight" : 63.0,
+        "distanceFromOriginLeft" : 63.0,
+        "side" : 1
+      }, {
+        "aisleId" : 15,
+        "distanceFromOriginRight" : 67.5,
+        "distanceFromOriginLeft" : 67.5,
+        "side" : 1
+      }, {
+        "aisleId" : 16,
+        "distanceFromOriginRight" : 72.0,
+        "distanceFromOriginLeft" : 72.0,
+        "side" : 1
+      }, {
+        "aisleId" : 17,
+        "distanceFromOriginRight" : 76.5,
+        "distanceFromOriginLeft" : 76.5,
+        "side" : 1
+      }, {
+        "aisleId" : 18,
+        "distanceFromOriginRight" : 81.0,
+        "distanceFromOriginLeft" : 81.0,
+        "side" : 1
+      }, {
+        "aisleId" : 19,
+        "distanceFromOriginRight" : 85.5,
+        "distanceFromOriginLeft" : 85.5,
+        "side" : 1
+      }, {
+        "aisleId" : 20,
+        "distanceFromOriginRight" : 90.0,
+        "distanceFromOriginLeft" : 90.0,
+        "side" : 1
+      }, {
+        "aisleId" : 21,
+        "distanceFromOriginRight" : 94.5,
+        "distanceFromOriginLeft" : 94.5,
+        "side" : 1
+      }, {
+        "aisleId" : 22,
+        "distanceFromOriginRight" : 99.0,
+        "distanceFromOriginLeft" : 99.0,
+        "side" : 1
+      }, {
+        "aisleId" : 23,
+        "distanceFromOriginRight" : 103.5,
+        "distanceFromOriginLeft" : 103.5,
+        "side" : 1
+      } ],
+      "pickers" : null
+    } ],
+    "Orders" : [ {
+      "numOrders" : 50,
+      "OrderList" : [ {
+        "id" : 0,
+        "dueDate" : 1114683,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 22,
+        "weight" : 22.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 26,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 212,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 155,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 169,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 64,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 197,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 157,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 198,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 65,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 488,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 25,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 1103,
+          "aisle" : 22,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 103,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 125,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 11,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 418,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 200,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 233,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 89,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 97,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 94,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 868,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 1,
+        "dueDate" : 968073,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 13,
+        "weight" : 13.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 1003,
+          "aisle" : 20,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 140,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 93,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 1068,
+          "aisle" : 21,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 1055,
+          "aisle" : 21,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 163,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 175,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 185,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 176,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 599,
+          "aisle" : 11,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 487,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 187,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 233,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 2,
+        "dueDate" : 231177,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 9,
+        "weight" : 9.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 384,
+          "aisle" : 7,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 186,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 91,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 146,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 80,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 199,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 272,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 496,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 966,
+          "aisle" : 19,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 3,
+        "dueDate" : 470508,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 11,
+        "weight" : 11.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 426,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 207,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 53,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 19,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 199,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 2,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 109,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 74,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 47,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 228,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 310,
+          "aisle" : 6,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 4,
+        "dueDate" : 223120,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 17,
+        "weight" : 17.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 60,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 219,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 92,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 104,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 101,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 124,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 16,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 103,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 44,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 157,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 873,
+          "aisle" : 17,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 53,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 180,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 2,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 149,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 10,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 5,
+        "dueDate" : 775697,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 10,
+        "weight" : 10.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 58,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 212,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 26,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 15,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 1175,
+          "aisle" : 23,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 155,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 192,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 87,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 115,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 412,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 6,
+        "dueDate" : 788461,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 17,
+        "weight" : 17.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 139,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 55,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 113,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 127,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 228,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 857,
+          "aisle" : 17,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 64,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 10,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 142,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 150,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 81,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 791,
+          "aisle" : 15,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 17,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 126,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 151,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 212,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 30,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 7,
+        "dueDate" : 1366803,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 174,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 159,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 214,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 228,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 181,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 114,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 8,
+        "dueDate" : 1860352,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 11,
+        "weight" : 11.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 166,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 361,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 401,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 201,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 181,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 185,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 781,
+          "aisle" : 15,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 6,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 106,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 246,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 9,
+        "dueDate" : 1560075,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 15,
+        "weight" : 15.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 155,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 67,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 108,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 113,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 20,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 214,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 161,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 27,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 14,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 235,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 307,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 454,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 222,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 10,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 81,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 10,
+        "dueDate" : 539261,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 17,
+        "weight" : 17.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 94,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 39,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 77,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 218,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 68,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 223,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 160,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 132,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 666,
+          "aisle" : 13,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 364,
+          "aisle" : 7,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 232,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 1,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 225,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 272,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 237,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 96,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 93,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 11,
+        "dueDate" : 1225303,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 8,
+        "weight" : 8.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 82,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 453,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 605,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 215,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 237,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 27,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 90,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 123,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 12,
+        "dueDate" : 1725018,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 24,
+        "weight" : 24.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 142,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 68,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 210,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 99,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 206,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 19,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 1049,
+          "aisle" : 20,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 437,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 406,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 1102,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 137,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 200,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 49,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 860,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 224,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 139,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 158,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 631,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 120,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 144,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 3,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 156,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 355,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 13,
+        "dueDate" : 1336009,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 5,
+        "weight" : 5.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 180,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 30,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 1067,
+          "aisle" : 21,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 145,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 1046,
+          "aisle" : 20,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 14,
+        "dueDate" : 301003,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 10,
+        "weight" : 10.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 114,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 236,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 157,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 51,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 981,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 243,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 1128,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 221,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 128,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 88,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 15,
+        "dueDate" : 47959,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 7,
+        "weight" : 7.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 190,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 142,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 78,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 267,
+          "aisle" : 5,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 247,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 34,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 199,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 16,
+        "dueDate" : 126515,
+        "arrivalTime" : 1747053127856,
+        "serviceTime" : 0.0,
+        "numReferences" : 10,
+        "weight" : 10.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 23,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 29,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 103,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 465,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 160,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 226,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 182,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 136,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 98,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 232,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 17,
+        "dueDate" : 1050035,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 22,
+        "weight" : 22.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 141,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 1075,
+          "aisle" : 21,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 123,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 126,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 23,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 154,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 181,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 129,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 343,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 508,
+          "aisle" : 10,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 35,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 21,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 88,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 314,
+          "aisle" : 6,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 158,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 47,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 239,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 159,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 127,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 13,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 96,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 18,
+        "dueDate" : 717696,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 101,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 185,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 84,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 437,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 480,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 426,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 19,
+        "dueDate" : 791161,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 9,
+        "weight" : 9.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 118,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 526,
+          "aisle" : 10,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 86,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 170,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 41,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 99,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 378,
+          "aisle" : 7,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 171,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 826,
+          "aisle" : 16,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 20,
+        "dueDate" : 1644887,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 9,
+        "weight" : 9.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 174,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 145,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 139,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 105,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 227,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 195,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 67,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 979,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 51,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 21,
+        "dueDate" : 298902,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 23,
+        "weight" : 23.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 256,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 29,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 434,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 247,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 313,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 181,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 87,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 120,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 233,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 170,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 99,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 147,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 121,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 68,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 137,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 184,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 165,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 167,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 951,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 868,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 241,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 104,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 0,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 22,
+        "dueDate" : 1276506,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 15,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 134,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 96,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 480,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 967,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 111,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 23,
+        "dueDate" : 1804990,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 5,
+        "weight" : 5.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 232,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 95,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 20,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 151,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 968,
+          "aisle" : 19,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 24,
+        "dueDate" : 142060,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 20,
+        "weight" : 20.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 233,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 416,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 224,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 225,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 162,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 1206,
+          "aisle" : 24,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 164,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 210,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 232,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 130,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 558,
+          "aisle" : 11,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 40,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 181,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 467,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 4,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 239,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 222,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 75,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 148,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 667,
+          "aisle" : 13,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 25,
+        "dueDate" : 654302,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 8,
+        "weight" : 8.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 3,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 7,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 108,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 37,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 151,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 2,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 57,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 61,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 26,
+        "dueDate" : 459338,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 17,
+        "weight" : 17.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 169,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 196,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 101,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 164,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 1136,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 440,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 188,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 65,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 184,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 145,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 950,
+          "aisle" : 19,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 1017,
+          "aisle" : 20,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 1,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 120,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 102,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 152,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 122,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 27,
+        "dueDate" : 229862,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 21,
+        "weight" : 21.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 94,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 187,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 55,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 0,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 147,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 213,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 167,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 44,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 824,
+          "aisle" : 16,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 39,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 387,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 107,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 12,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 383,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 484,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 49,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 134,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 205,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 193,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 10,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 615,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 28,
+        "dueDate" : 1926506,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 374,
+          "aisle" : 7,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 20,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 60,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 7,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 230,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 149,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 29,
+        "dueDate" : 1345145,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 20,
+        "weight" : 20.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 963,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 54,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 44,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 411,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 285,
+          "aisle" : 5,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 17,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 682,
+          "aisle" : 13,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 860,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 165,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 161,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 196,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 21,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 69,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 117,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 348,
+          "aisle" : 6,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 697,
+          "aisle" : 13,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 8,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 113,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 73,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 357,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 30,
+        "dueDate" : 1520038,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 17,
+        "weight" : 17.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 252,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 435,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 160,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 230,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 126,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 67,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 169,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 165,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 204,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 107,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 216,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 183,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 156,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 71,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 3,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 244,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 45,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 31,
+        "dueDate" : 1918070,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 11,
+        "weight" : 11.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 148,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 22,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 225,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 8,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 240,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 43,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 433,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 51,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 826,
+          "aisle" : 16,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 210,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 533,
+          "aisle" : 10,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 32,
+        "dueDate" : 507755,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 14,
+        "weight" : 14.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 0,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 227,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 134,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 252,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 162,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 100,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 150,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 6,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 61,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 149,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 185,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 151,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 650,
+          "aisle" : 13,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 33,
+        "dueDate" : 1172257,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 24,
+        "weight" : 24.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 139,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 38,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 37,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 163,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 111,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 716,
+          "aisle" : 14,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 269,
+          "aisle" : 5,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 129,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 135,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 256,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 224,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 138,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 1093,
+          "aisle" : 21,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 5,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 193,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 102,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 155,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 243,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 180,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 13,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 228,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 633,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 461,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 114,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 34,
+        "dueDate" : 1651857,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 7,
+        "weight" : 7.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 368,
+          "aisle" : 7,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 13,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 133,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 151,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 152,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 868,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 240,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 35,
+        "dueDate" : 194597,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 18,
+        "weight" : 18.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 239,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 203,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 117,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 593,
+          "aisle" : 11,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 49,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 99,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 72,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 874,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 299,
+          "aisle" : 5,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 55,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 226,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 214,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 393,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 1188,
+          "aisle" : 23,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 39,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 22,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 97,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 183,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 36,
+        "dueDate" : 811685,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 18,
+        "weight" : 18.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 483,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 25,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 249,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 108,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 127,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 301,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 1108,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 157,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 180,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 23,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 63,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 215,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 53,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 285,
+          "aisle" : 5,
+          "side" : 1,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 6,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 83,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 18,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 246,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 37,
+        "dueDate" : 1504084,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 8,
+        "weight" : 8.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 70,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 206,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 199,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 40,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 13,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 150,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 5,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 15,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 38,
+        "dueDate" : 1281560,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 15,
+        "weight" : 15.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 34,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 391,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 401,
+          "aisle" : 8,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 202,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 130,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 313,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 165,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 145,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 87,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 498,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 107,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 862,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 62,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 100,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 123,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 39,
+        "dueDate" : 713827,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 12,
+        "weight" : 12.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 789,
+          "aisle" : 15,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 27,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 229,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 367,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 173,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 1187,
+          "aisle" : 23,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 2,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 56,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 216,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 132,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 54,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 172,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 40,
+        "dueDate" : 438304,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 137,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 161,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 967,
+          "aisle" : 19,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 26,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 241,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 102,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 41,
+        "dueDate" : 702154,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 14,
+        "weight" : 14.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 189,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 146,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 231,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 113,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 112,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 14,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 187,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 633,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 209,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 1140,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 58,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 760,
+          "aisle" : 15,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 38,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 37,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 42,
+        "dueDate" : 706646,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 24,
+        "weight" : 24.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 216,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 174,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 16,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 68,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 183,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 567,
+          "aisle" : 11,
+          "side" : 1,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 182,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 802,
+          "aisle" : 16,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 199,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 604,
+          "aisle" : 12,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 497,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 236,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 159,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 94,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 515,
+          "aisle" : 10,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 150,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 50,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 37,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 207,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 18,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 461,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 861,
+          "aisle" : 17,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 482,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 86,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 43,
+        "dueDate" : 1223679,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 14,
+        "weight" : 14.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 66,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 57,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 215,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 127,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 82,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 177,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 43,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 225,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 64,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 165,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 444,
+          "aisle" : 8,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 1051,
+          "aisle" : 21,
+          "side" : 1,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 252,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 379,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 44,
+        "dueDate" : 1840822,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 5,
+        "weight" : 5.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 780,
+          "aisle" : 15,
+          "side" : 0,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 6,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 197,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 864,
+          "aisle" : 17,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 473,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 45,
+        "dueDate" : 1424387,
+        "arrivalTime" : 1747053127857,
+        "serviceTime" : 0.0,
+        "numReferences" : 6,
+        "weight" : 6.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 136,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 1211,
+          "aisle" : 24,
+          "side" : 1,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 10,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 39,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 1148,
+          "aisle" : 22,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 207,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 46,
+        "dueDate" : 1710984,
+        "arrivalTime" : 1747053127858,
+        "serviceTime" : 0.0,
+        "numReferences" : 7,
+        "weight" : 7.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 116,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 8,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 62,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 64,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 19.0625,
+          "weight" : 1.0
+        }, {
+          "id" : 144,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 172,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 99,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 47,
+        "dueDate" : 1554848,
+        "arrivalTime" : 1747053127858,
+        "serviceTime" : 0.0,
+        "numReferences" : 18,
+        "weight" : 18.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 156,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 8.842500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 113,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 169,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 147,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 244,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 54,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 6.287500000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 499,
+          "aisle" : 9,
+          "side" : 1,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 236,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 844,
+          "aisle" : 16,
+          "side" : 0,
+          "heightPosition" : 57.3875,
+          "weight" : 1.0
+        }, {
+          "id" : 3,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 132,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 138,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 81,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        }, {
+          "id" : 43,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 54.83250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 327,
+          "aisle" : 6,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 133,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 168,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 24.1725,
+          "weight" : 1.0
+        }, {
+          "id" : 229,
+          "aisle" : 4,
+          "side" : 1,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 48,
+        "dueDate" : 1518215,
+        "arrivalTime" : 1747053127858,
+        "serviceTime" : 0.0,
+        "numReferences" : 21,
+        "weight" : 21.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 1127,
+          "aisle" : 22,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 108,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 197,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 28,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 791,
+          "aisle" : 15,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 77,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 34.3925,
+          "weight" : 1.0
+        }, {
+          "id" : 228,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 171,
+          "aisle" : 3,
+          "side" : 1,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 98,
+          "aisle" : 1,
+          "side" : 0,
+          "heightPosition" : 62.4975,
+          "weight" : 1.0
+        }, {
+          "id" : 1166,
+          "aisle" : 23,
+          "side" : 0,
+          "heightPosition" : 21.617500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 188,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 375,
+          "aisle" : 7,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 102,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 109,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 162,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 37,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 47.167500000000004,
+          "weight" : 1.0
+        }, {
+          "id" : 133,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 278,
+          "aisle" : 5,
+          "side" : 0,
+          "heightPosition" : 36.947500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 170,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 841,
+          "aisle" : 16,
+          "side" : 1,
+          "heightPosition" : 52.2775,
+          "weight" : 1.0
+        }, {
+          "id" : 131,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 39.5025,
+          "weight" : 1.0
+        } ]
+      }, {
+        "id" : 49,
+        "dueDate" : 760592,
+        "arrivalTime" : 1747053127858,
+        "serviceTime" : 0.0,
+        "numReferences" : 19,
+        "weight" : 19.0,
+        "completionTime" : 0.0,
+        "products" : [ {
+          "id" : 20,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 26.727500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 32,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 108,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 11.3975,
+          "weight" : 1.0
+        }, {
+          "id" : 160,
+          "aisle" : 3,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 110,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 13.9525,
+          "weight" : 1.0
+        }, {
+          "id" : 63,
+          "aisle" : 1,
+          "side" : 1,
+          "heightPosition" : 16.507500000000007,
+          "weight" : 1.0
+        }, {
+          "id" : 234,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 334,
+          "aisle" : 6,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        }, {
+          "id" : 100,
+          "aisle" : 2,
+          "side" : 0,
+          "heightPosition" : 1.177500000000002,
+          "weight" : 1.0
+        }, {
+          "id" : 1038,
+          "aisle" : 20,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 482,
+          "aisle" : 9,
+          "side" : 0,
+          "heightPosition" : 42.057500000000005,
+          "weight" : 1.0
+        }, {
+          "id" : 139,
+          "aisle" : 2,
+          "side" : 1,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 24,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 246,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 59.94250000000001,
+          "weight" : 1.0
+        }, {
+          "id" : 23,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 29.2825,
+          "weight" : 1.0
+        }, {
+          "id" : 238,
+          "aisle" : 4,
+          "side" : 0,
+          "heightPosition" : 49.7225,
+          "weight" : 1.0
+        }, {
+          "id" : 3,
+          "aisle" : 0,
+          "side" : 1,
+          "heightPosition" : 3.7325000000000017,
+          "weight" : 1.0
+        }, {
+          "id" : 625,
+          "aisle" : 12,
+          "side" : 1,
+          "heightPosition" : 31.837500000000006,
+          "weight" : 1.0
+        }, {
+          "id" : 34,
+          "aisle" : 0,
+          "side" : 0,
+          "heightPosition" : 44.6125,
+          "weight" : 1.0
+        } ]
+      } ]
+    } ]
+  } ]
+}
