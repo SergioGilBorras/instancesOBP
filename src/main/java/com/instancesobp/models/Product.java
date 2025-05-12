@@ -88,6 +88,10 @@ public class Product implements Cloneable, Serializable {
         this.weight = product.weight;
     }
 
+    public Product() {
+
+    }
+
     /**
      * Converts the item side aisle location integer value to a string representation.
      *

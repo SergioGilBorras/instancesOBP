@@ -18,6 +18,8 @@
  */
 package com.instancesobp.instancesReader.legacy;
 
+import java.io.File;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
 
 /**
@@ -173,15 +175,15 @@ public class GeneralInstancesLoader {
                 consoleInfo.setExampleNumber(1); // Albareda example
                 consoleInfo.setWarehouseNumber(warehouse);
 
-                ArrayList<Integer> batchNumbers = new ArrayList<>();
-                batchNumbers.add(50);
-                batchNumbers.add(100);
-                batchNumbers.add(150);
-                batchNumbers.add(200);
-                batchNumbers.add(250);
+                ArrayList<Integer> ordersNumbers = new ArrayList<>();
+                ordersNumbers.add(50);
+                ordersNumbers.add(100);
+                ordersNumbers.add(150);
+                ordersNumbers.add(200);
+                ordersNumbers.add(250);
 
-                for (Integer batch : batchNumbers) {
-                    consoleInfo.setBatchesNumber(batch);
+                for (Integer orders : ordersNumbers) {
+                    consoleInfo.setOrdersNumber(orders);
 
                     ArrayList<String> instanceNumbers = new ArrayList<>();
                     instanceNumbers.add("000");
@@ -200,5 +202,72 @@ public class GeneralInstancesLoader {
         }
 
         return albaredaInstances;
+    }
+    /**
+     * Retrieves all instances for the Arbex example.
+     *
+     * @return A list of Arbex instances.
+     */
+    public ArrayList<InstancesLoaderFromConsoleInfo> getAllInstancesArbex(){
+        ArrayList<InstancesLoaderFromConsoleInfo> arbexInstances=new ArrayList<>();
+        ReadConsoleInfo consoleInfo = new ReadConsoleInfo();
+
+        for(int w=1; w<5 ; w++) {
+            consoleInfo.setWarehouseType(w);
+            consoleInfo.warehouseTypeToName();
+            System.out.println("Cargando instancias almacen: " + consoleInfo.getWarehouseTypeString());
+
+
+            for (int i = 0; i < 2; i++) {
+                StringBuilder sb = new StringBuilder();
+                String ruta = "./Warehouses_instances/legacy/W6_Arbex/";
+                String small = "smallInstances";
+                String large = "largeInstances";
+                sb.append(ruta);
+
+                if (i == 0) {
+                    sb.append(small);
+                    consoleInfo.setOrderTypeString(small);
+                } else {
+                    sb.append(large);
+                    consoleInfo.setOrderTypeString(large);
+                }
+                System.out.println(" -- Cargando instancias order tipo: " + consoleInfo.getOrderTypeString());
+
+
+
+                consoleInfo.setExampleNumber(3); // Arbex example
+                File carpeta = new File(sb.toString());
+                if (carpeta.isDirectory()) {
+                    // Obtener la lista de archivos en la carpeta
+                    String[] archivos = carpeta.list();/*new FilenameFilter() {
+                        @Override
+                        public boolean accept(File dir, String name) {
+                            // Filtrar solo archivos (no directorios)
+                            return new File(dir, name).isFile();
+                        }
+                    });*/
+
+                    // Verificar si hay archivos en la carpeta
+                    if (archivos != null) {
+                        for (String archivo : archivos) {
+                            if (!archivo.equals("readme.txt")) {
+                                consoleInfo.setInstanceFileName(archivo);
+
+                                arbexInstances.add(new InstancesLoaderFromConsoleInfo(consoleInfo));
+                            }
+
+                        }
+                    } else {
+                        System.out.println("La carpeta está vacía o no se pudo acceder a ella.");
+                    }
+                } else {
+                    System.out.println("La ruta proporcionada no es una carpeta.");
+                }
+
+            }
+        }
+
+        return arbexInstances;
     }
 }

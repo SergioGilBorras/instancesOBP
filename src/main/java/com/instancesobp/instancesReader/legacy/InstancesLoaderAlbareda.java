@@ -109,7 +109,7 @@ public class InstancesLoaderAlbareda {
         String layoutFile = "./Warehouses_instances/legacy/W1-W2-W3-W4_Albareda/W" +
                 consoleInfo.getWarehouseNumber() +
                 "/" +
-                consoleInfo.getBatchesNumber() +
+                consoleInfo.getOrdersNumber() +
                 "/wsrp_input_layout_0" +
                 consoleInfo.getWarehouseNumber() +
                 "_" +
@@ -120,7 +120,7 @@ public class InstancesLoaderAlbareda {
         String orderFile = "./Warehouses_instances/legacy/W1-W2-W3-W4_Albareda/W" +
                 consoleInfo.getWarehouseNumber() +
                 "/" +
-                consoleInfo.getBatchesNumber() +
+                consoleInfo.getOrdersNumber() +
                 "/wsrp_input_pedido_0" +
                 consoleInfo.getWarehouseNumber() +
                 "_" +

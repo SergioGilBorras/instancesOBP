@@ -18,6 +18,9 @@
  */
 package com.instancesobp.instancesReader.legacy;
 
+import com.instancesobp.models.Warehouse;
+import com.instancesobp.utils.Codigo;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -56,9 +59,9 @@ public class ReadConsoleInfo {
     private int initialOrders;
 
     /**
-     * Number of batches to configure.
+     * Number of orders to configure.
      */
-    private int batchNumber;
+    private int ordersNumber;
 
     /**
      * Identifier for the selected instance.
@@ -66,7 +69,7 @@ public class ReadConsoleInfo {
     private String instanceNumber;
 
     /**
-     * Example number to select (1 for Albareda, 2 for Henn).
+     * Example number to select (1 for Albareda, 2 for Henn, 3 for Arbex).
      */
     private int exampleNumber;
 
@@ -89,6 +92,16 @@ public class ReadConsoleInfo {
      * Indicates if the server or worker is selected (0 for server, 1 for worker).
      */
     private int serverWorker;
+
+    private int warehouseType;
+
+    private String warehouseTypeString;
+
+    private int orderType;
+
+    private String orderTypeString;
+
+    private String instanceName;
 
     /**
      * Default constructor for the `ReadConsoleInfo` class.
@@ -135,7 +148,7 @@ public class ReadConsoleInfo {
         this.selectExampleNumber();
         if (exampleNumber == 1) {
             this.selectWarehousesNumber();
-            this.selectBatchesNumber();
+            this.selectOrdersNumber();
             this.selectInstanceNumber();
         } else if (exampleNumber == 2) {
             this.selectItemsOrderNumber();
@@ -159,11 +172,44 @@ public class ReadConsoleInfo {
 
             this.selectSettingNumber();
             this.getNumberOrdersHenn();
+        } else if (exampleNumber == 3){
+            this.selectWarehouseType();
+
+            warehouseTypeToName();
+
+            this.selectTypeOrder();
+            switch (this.orderType){
+                case 1:
+                    this.orderTypeString="largeInstances";
+                    break;
+                case 2:
+                    this.orderTypeString="smallInstances";
+                    break;
+            }
+
+
         }
 
         this.selectOnlineTest();
         if (this.onlineTest == 1) {
             this.selectNumInitOrders();
+        }
+    }
+
+    public void warehouseTypeToName() {
+        switch (this.warehouseType){
+            case 1:
+                this.warehouseTypeString="warehouse_8_0_3_1560";
+                break;
+            case 2:
+                this.warehouseTypeString="warehouse_8_1_3_1560";
+                break;
+            case 3:
+                this.warehouseTypeString="warehouse_16_0_3_1560";
+                break;
+            case 4:
+                this.warehouseTypeString="warehouse_16_1_3_1560";
+                break;
         }
     }
 
@@ -209,7 +255,7 @@ public class ReadConsoleInfo {
      * Prompts the user to select the number of initial orders.
      */
     public final void selectNumInitOrders() {
-        int max = this.batchNumber / 2;
+        int max = this.ordersNumber / 2;
         System.out.println("Choose number of initial orders (0-" + max + "): ");
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
@@ -231,7 +277,7 @@ public class ReadConsoleInfo {
      * item order and setting.
      */
     public void getNumberOrdersHenn() {
-        File folder = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString);
+        File folder = new File("./Warehouses_instances/legacy/W5A_Henn/" + itemLocationString);
         if (!folder.isDirectory()) {
             System.out.println("Error: The entered path is not a valid directory " + folder.getAbsolutePath());
         } else if (folder.listFiles() == null) {
@@ -239,9 +285,9 @@ public class ReadConsoleInfo {
         } else {
             for (final File fileEntry : Objects.requireNonNull(folder.listFiles())) {
                 if (!fileEntry.isDirectory() && (fileEntry.getName().contains(settingNumber + "s") || fileEntry.getName().contains(settingNumber + "l"))) {
-                    String filePath = "./Warehouses_instances/legacy/W5_Henn/" + itemLocationString + "/" + fileEntry.getName();
+                    String filePath = "./Warehouses_instances/legacy/W5A_Henn/" + itemLocationString + "/" + fileEntry.getName();
                     String[] fileParts = filePath.split("-");
-                    this.batchNumber = parseInt(fileParts[1]);
+                    this.ordersNumber = parseInt(fileParts[1]);
                 }
             }
         }
@@ -253,7 +299,7 @@ public class ReadConsoleInfo {
      */
     public final void selectSettingNumber() {
         System.out.println("Choose a setting number: ");
-        File folder = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString);
+        File folder = new File("./Warehouses_instances/legacy/W5A_Henn/" + itemLocationString);
         if (!folder.isDirectory()) {
             System.out.println("Error: The entered path is not a valid directory " + folder.getAbsolutePath());
             return;
@@ -270,7 +316,7 @@ public class ReadConsoleInfo {
         System.out.print(">\n");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int W = parseInt(br.readLine());
-            File settingFile = new File("./Warehouses_instances/legacy/W5_Henn/" + itemLocationString + "/sett" + W + ".txt");
+            File settingFile = new File("./Warehouses_instances/legacy/W5A_Henn/" + itemLocationString + "/sett" + W + ".txt");
             if (!settingFile.exists()) {
                 System.out.println("Error: Enter a valid number.");
                 selectSettingNumber();
@@ -307,16 +353,53 @@ public class ReadConsoleInfo {
         }
     }
 
+
+    public final void selectWarehouseType(){
+        System.out.println("Choose a type of warehouse (1[warehouse_8_0]-2[warehouse_8_1]-3[warehouse_16_0]-4[warehouse_16_1]): ");
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            int W = parseInt(br.readLine());
+            if (W < 1 || W > 4) {
+                System.out.println("Error: Enter a valid number between 1-4.");
+                selectWarehouseType();
+            } else {
+                warehouseType = W;
+            }
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Enter a valid number. " + e.getMessage());
+            selectWarehouseType();
+        }
+    }
+
+    public final void selectTypeOrder(){
+        System.out.println("Choose a type of warehouse (1[largeInstances]-2[smallInstances]): ");
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            int W = parseInt(br.readLine());
+            if (W < 1 || W > 2) {
+                System.out.println("Error: Enter a valid number between 1-2.");
+                selectTypeOrder();
+            } else {
+                orderType = W;
+            }
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Enter a valid number. " + e.getMessage());
+            selectTypeOrder();
+        }
+    }
+
     /**
      * Prompts the user to select an example number.
      * The method validates the input to ensure it is within the valid range (1-2).
      */
     public final void selectExampleNumber() {
-        System.out.println("Choose an example number (1[Albareda]-2[Henn]): ");
+        System.out.println("Choose an example number (1[Albareda]-2[Henn]-3[Arbex]): ");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int W = parseInt(br.readLine());
-            if (W < 1 || W > 2) {
-                System.out.println("Error: Enter a valid number between 1-2.");
+            if (W < 1 || W > 3) {
+                System.out.println("Error: Enter a valid number between 1-3.");
                 selectExampleNumber();
             } else {
                 exampleNumber = W;
@@ -353,21 +436,21 @@ public class ReadConsoleInfo {
     /**
      * Prompts the user to select the number of batches.
      */
-    public final void selectBatchesNumber() {
+    public final void selectOrdersNumber() {
         System.out.println("Choose a number of orders (50,100,150,200,250): ");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int W = parseInt(br.readLine());
             if (W != 50 && W != 100 && W != 150 && W != 200 && W != 250) {
                 System.out.println("Error: Enter a valid number between (50,100,150,200,250).");
-                selectBatchesNumber();
+                selectOrdersNumber();
             } else {
-                batchNumber = W;
+                ordersNumber = W;
             }
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         } catch (NumberFormatException e) {
             System.out.println("Error: Enter a valid number. " + e.getMessage());
-            selectBatchesNumber();
+            selectOrdersNumber();
         }
     }
 
@@ -411,7 +494,7 @@ public class ReadConsoleInfo {
 
     /**
      * Gets the example number.
-     * [1 for Albareda, 2 for Henn]
+     * [1 for Albareda, 2 for Henn, 3 for Arbex]
      *
      * @return The example number as an integer.
      */
@@ -421,7 +504,7 @@ public class ReadConsoleInfo {
 
     /**
      * Sets the example number.
-     * [1 for Albareda, 2 for Henn]
+     * [1 for Albareda, 2 for Henn, 3 for Arbex]
      *
      * @param exampleNumber The example number to set.
      */
@@ -477,21 +560,22 @@ public class ReadConsoleInfo {
     }
 
     /**
-     * Gets the number of batches.
+     * Gets the number of orders.
      *
-     * @return The number of batches as an integer.
+     * @return The number of orders as an integer.
      */
-    public int getBatchesNumber() {
-        return batchNumber;
+    public int getOrdersNumber() {
+        return ordersNumber;
     }
 
     /**
-     * Sets the number of batches.
+     * Sets the number of orders.
      *
-     * @param batchesNumber The number of batches to set.
+     * @param ordersNumber The number of orders to set.
      */
-    public void setBatchesNumber(int batchesNumber) {
-        this.batchNumber = batchesNumber;
+    public void setOrdersNumber(int ordersNumber) {
+        this.ordersNumber = ordersNumber;
+
     }
 
     /**
@@ -571,6 +655,45 @@ public class ReadConsoleInfo {
     }
 
     /**
+     *
+     * @return
+     */
+    public String getWarehouseTypeString() {
+        return warehouseTypeString;
+    }
+
+    public void setWarehouseTypeString(String warehouseTypeString) {
+        this.warehouseTypeString = warehouseTypeString;
+    }
+
+    public void setOrderTypeString(String orderTypeString) {
+        this.orderTypeString = orderTypeString;
+    }
+
+    public int getWarehouseType() {
+        return warehouseType;
+    }
+
+    public void setWarehouseType(int warehouseType) {
+        this.warehouseType = warehouseType;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getOrderTypeString() {
+        return orderTypeString;
+    }
+
+    public void setInstanceFileName(String instanceFilename) {
+        this.instanceName = instanceFilename;
+    }
+    public String getInstanceFileName() {
+        return this.instanceName;
+    }
+
+    /**
      * Returns a string representation of the instance, including all its attributes.
      *
      * @return A string representation of the instance.
@@ -581,12 +704,12 @@ public class ReadConsoleInfo {
         if (this.exampleNumber == 1) {
             sb.append("Albareda Instance\r\n")
                     .append("WareHouse number: ").append(this.warehouseNumber).append("\r\n")
-                    .append("Batches number: ").append(this.batchNumber).append("\r\n")
+                    .append("Batches number: ").append(this.ordersNumber).append("\r\n")
                     .append("Instance number: ").append(this.instanceNumber).append("\r\n");
         } else {
             sb.append("Henn Instance\r\n")
                     .append("Items order: ").append(this.itemLocationString).append("\r\n")
-                    .append("Batches number: ").append(this.batchNumber).append("\r\n")
+                    .append("Batches number: ").append(this.ordersNumber).append("\r\n")
                     .append("Setting number: ").append(this.settingNumber).append("\r\n");
         }
         return sb.toString();
@@ -601,11 +724,30 @@ public class ReadConsoleInfo {
         StringBuilder sb = new StringBuilder();
         if (this.exampleNumber == 1) {
             sb.append("A_W").append(this.warehouseNumber).append("_")
-                    .append(this.batchNumber).append("_").append(this.instanceNumber);
+                    .append(this.ordersNumber).append("_").append(this.instanceNumber);
+        }else if(this.exampleNumber==3){
+            sb.append("ARB_W6A_").append(this.warehouseType).append("_")
+                    .append(this.orderTypeString);
         } else {
-            sb.append("H_").append(this.itemLocationString).append("_")
-                    .append(this.batchNumber).append("_").append(this.settingNumber);
+            sb.append("H_W5A_").append(this.itemLocationString).append("_")
+                    .append(this.ordersNumber).append("_").append(this.settingNumber);
         }
+        return sb.toString();
+    }
+
+    public String toStringInstanceName(Warehouse wh){
+        StringBuilder sb=new StringBuilder();
+        if (this.exampleNumber == 1) {
+            sb.append("A_W").append(this.warehouseNumber).append("_").append(Codigo.getTypeLocation(wh.getOrderLocation())).append("_")
+                    .append(this.ordersNumber).append("_").append((int)wh.getWorkerCapacity());
+        }else if(this.exampleNumber==3){
+            sb.append("ARB_W6A_").append(Codigo.getTypeLocation(wh.getOrderLocation())).append("_")
+                    .append(wh.getNumberOfOrders()).append("_").append((int)wh.getWorkerCapacity());
+        } else {
+            sb.append("H_W5A_").append(this.itemLocationString).append("_")
+                    .append(wh.getNumberOfOrders()).append("_").append((int)wh.getWorkerCapacity());
+        }
+
         return sb.toString();
     }
 

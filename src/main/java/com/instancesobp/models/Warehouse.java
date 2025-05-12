@@ -18,6 +18,8 @@
  */
 package com.instancesobp.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +58,7 @@ public class Warehouse implements Serializable {
     private int numberOfAisles;
 
     /**
-     * Total number of items in the warehouse.
+     * Total number of items to collect.
      */
     private int numberOfItems;
 
@@ -89,6 +91,11 @@ public class Warehouse implements Serializable {
      * Width of the aisles in the warehouse.
      */
     private double aisleWidth;
+
+    /**
+     * Number of cross aisles in the warehouse.
+     */
+    private int crossAisles;
 
     /**
      * Capacity of the worker in the warehouse.
@@ -136,6 +143,11 @@ public class Warehouse implements Serializable {
     private int operationalHours = 4;
 
     /**
+     *  List of pickers for orders
+     */
+    private List<Picker> pickers;
+
+    /**
      * Default constructor for the Warehouse class.
      * Initializes empty lists for aisles and orders.
      */
@@ -150,7 +162,7 @@ public class Warehouse implements Serializable {
      *
      * @param numberOfOrders  Number of orders in the warehouse.
      * @param numberOfAisles  Number of aisles in the warehouse.
-     * @param numberOfItems   Total number of items in the warehouse.
+     * @param numberOfItems   Total number of items to collect.
      * @param depotPlacement  Placement of the depot table.
      * @param orderLocation   Location of the orders in the warehouse.
      * @param shelfLength     Length of the shelves.
@@ -182,6 +194,94 @@ public class Warehouse implements Serializable {
         this.aisles = aisles;
         this.orders = orders;
         this.numberOfSlots = numberOfSlots;
+    }
+
+    /**
+     * Parameterized constructor for the Warehouse class.
+     * Initializes the warehouse with the specified properties.
+     *
+     * @param numberOfOrders  Number of orders in the warehouse.
+     * @param numberOfAisles  Number of aisles in the warehouse.
+     * @param numberOfItems   Total number of items to collect.
+     * @param depotPlacement  Placement of the depot table.
+     * @param orderLocation   Location of the orders in the warehouse.
+     * @param shelfLength     Length of the shelves.
+     * @param shelfWidth      Width of the shelves.
+     * @param aisleWidth      Width of the aisles.
+     * @param crossAisles     Number of cross aisles in the warehouse.
+     * @param workerCapacity  Capacity of the worker.
+     * @param pickingTime     Time required for picking an item.
+     * @param outsideTurnTime Time required for turning outside the aisle.
+     * @param insideTurnTime  Time required for turning inside the aisle.
+     * @param numberOfSlots   Number of slots available in the warehouse.
+     * @param aisles          List of aisles in the warehouse.
+     * @param orders          List of orders in the warehouse.
+     */
+    public Warehouse(int numberOfOrders, int numberOfAisles, int numberOfItems, int depotPlacement, int orderLocation,
+                     double shelfLength, double shelfWidth, double aisleWidth, int crossAisles,double workerCapacity, double pickingTime,
+                     double outsideTurnTime, double insideTurnTime, int numberOfSlots, List<Aisles> aisles, List<Order> orders) {
+        this.numberOfOrders = numberOfOrders;
+        this.numberOfAisles = numberOfAisles;
+        this.numberOfItems = numberOfItems;
+        this.depotPlacement = depotPlacement;
+        this.orderLocation = orderLocation;
+        this.shelfLength = shelfLength;
+        this.shelfWidth = shelfWidth;
+        this.aisleWidth = aisleWidth;
+        this.crossAisles=crossAisles;
+        this.workerCapacity = workerCapacity;
+        this.pickingTime = pickingTime;
+        this.outsideTurnTime = outsideTurnTime;
+        this.insideTurnTime = insideTurnTime;
+        this.aisles = aisles;
+        this.orders = orders;
+        this.numberOfSlots = numberOfSlots;
+    }
+
+
+    /**
+     * Parameterized constructor for the Warehouse class.
+     * constructor with a list of pickers
+     * Initializes the warehouse with the specified properties.
+     *
+     * @param numberOfOrders  Number of orders in the warehouse.
+     * @param numberOfAisles  Number of aisles in the warehouse.
+     * @param numberOfItems   Total number of items to collect.
+     * @param depotPlacement  Placement of the depot table.
+     * @param orderLocation   Location of the orders in the warehouse.
+     * @param shelfLength     Length of the shelves.
+     * @param shelfWidth      Width of the shelves.
+     * @param aisleWidth      Width of the aisles.
+     * @param crossAisles     Number of cross aisles in the warehouse.
+     * @param workerCapacity  Capacity of the worker.
+     * @param pickingTime     Time required for picking an item.
+     * @param outsideTurnTime Time required for turning outside the aisle.
+     * @param insideTurnTime  Time required for turning inside the aisle.
+     * @param numberOfSlots   Number of slots available in the warehouse.
+     * @param aisles          List of aisles in the warehouse.
+     * @param orders          List of orders in the warehouse.
+     * @param pickers         List of pickers for the orders.
+     */
+    public Warehouse(int numberOfOrders, int numberOfAisles, int numberOfItems, int depotPlacement, int orderLocation,
+                     double shelfLength, double shelfWidth, double aisleWidth, int crossAisles,double workerCapacity, double pickingTime,
+                     double outsideTurnTime, double insideTurnTime, int numberOfSlots, List<Aisles> aisles, List<Order> orders,List<Picker> pickers) {
+        this.numberOfOrders = numberOfOrders;
+        this.numberOfAisles = numberOfAisles;
+        this.numberOfItems = numberOfItems;
+        this.depotPlacement = depotPlacement;
+        this.orderLocation = orderLocation;
+        this.shelfLength = shelfLength;
+        this.shelfWidth = shelfWidth;
+        this.aisleWidth = aisleWidth;
+        this.crossAisles=crossAisles;
+        this.workerCapacity = workerCapacity;
+        this.pickingTime = pickingTime;
+        this.outsideTurnTime = outsideTurnTime;
+        this.insideTurnTime = insideTurnTime;
+        this.aisles = aisles;
+        this.orders = orders;
+        this.numberOfSlots = numberOfSlots;
+        this.pickers=pickers;
     }
 
     /**
@@ -258,6 +358,7 @@ public class Warehouse implements Serializable {
         sb.append("Shelf length: ").append(this.shelfLength).append("\n");
         sb.append("Shelf width: ").append(this.shelfWidth).append("\n");
         sb.append("Aisle width: ").append(this.aisleWidth).append("\n");
+        sb.append("Cross Aisles: ").append(this.crossAisles).append("\n");
         sb.append("Worker capacity: ").append(this.workerCapacity).append("\n");
         sb.append("Picking time: ").append(this.pickingTime).append("\n");
         sb.append("Outside turn time: ").append(this.outsideTurnTime).append("\n");
@@ -311,7 +412,7 @@ public class Warehouse implements Serializable {
     }
 
     /**
-     * Gets the total number of items in the warehouse.
+     * Gets the total number of items to collect.
      *
      * @return The total number of items.
      */
@@ -320,9 +421,9 @@ public class Warehouse implements Serializable {
     }
 
     /**
-     * Sets the total number of items in the warehouse.
+     * Sets the total number of items to collect.
      *
-     * @param numberOfItems The total number of items.
+     * @param numberOfItems The total number of items to collect.
      */
     public void setNumberOfItems(int numberOfItems) {
         this.numberOfItems = numberOfItems;
@@ -543,4 +644,8 @@ public class Warehouse implements Serializable {
     public void setOperationalHours(int operationalHours) {
         this.operationalHours = operationalHours;
     }
+
+    public int getCrossAisles() {return crossAisles;}
+
+    public List<Picker> getPickers() {return pickers;}
 }

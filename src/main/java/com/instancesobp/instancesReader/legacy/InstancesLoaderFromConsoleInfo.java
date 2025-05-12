@@ -61,6 +61,12 @@ public class InstancesLoaderFromConsoleInfo {
             warehouse = albaredaLoader.getWarehouse();
             instanceName = albaredaLoader.getName();
             warehouse.setInstanceName(instanceName);
+        } else if (consoleInfo.getExampleNumber() == 3) {
+            InstancesLoaderArbex arbexLoader = new InstancesLoaderArbex(consoleInfo);
+            arbexLoader.run();
+            warehouse = arbexLoader.getWarehouse();
+            instanceName = arbexLoader.getName();
+            warehouse.setInstanceName(instanceName);
         }
     }
 

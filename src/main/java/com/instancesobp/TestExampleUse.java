@@ -81,7 +81,7 @@ public class TestExampleUse {
         //instanciasL.add("A_W2_50_000");
         //for (InstancesLoader instancesLoader : listInstancesLoader.getInstancesByName(instanciasL)) {
         double final_solution = 0;
-        for (InstancesLoaderFromConsoleInfo instancesLoaderFromConsoleInfo : generalInstancesLoader.getAllInstances()) {
+        for (InstancesLoaderFromConsoleInfo instancesLoaderFromConsoleInfo : generalInstancesLoader.getAllInstancesArbex()) {
             System.out.println("Instancia: " + instancesLoaderFromConsoleInfo.getName());
 
             Warehouse warehouse = instancesLoaderFromConsoleInfo.getWarehouse();
@@ -122,7 +122,7 @@ public class TestExampleUse {
     private static void EvaluateInstanceGraphics() {
 
         GeneralInstancesLoader LIL = new GeneralInstancesLoader();
-        InstancesLoaderFromConsoleInfo IL = LIL.getAllInstancesHENN().get(0);//getInstanceByName("A_W4_50_060");
+        InstancesLoaderFromConsoleInfo IL = LIL.getAllInstancesArbex().get(143);//getAllInstancesHENN().get(0);//getInstanceByName("A_W4_50_060");
         if (IL != null) {
             System.out.println("Instancia: " + IL.getName());
 

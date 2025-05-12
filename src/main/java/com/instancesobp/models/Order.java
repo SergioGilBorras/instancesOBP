@@ -18,6 +18,8 @@
  */
 package com.instancesobp.models;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +33,7 @@ import java.util.Objects;
  * @author Sergio Gil Borrás
  * @version 1.0
  */
+@JsonPropertyOrder({ "id", "dueDate", "arrivalTime", "serviceTime", "numReferences", "weight", "completionTime", "products" })
 public class Order implements Cloneable, Serializable {
 
     /**
@@ -103,6 +106,23 @@ public class Order implements Cloneable, Serializable {
         this.serviceTime = 0.0;
         this.completionTime = 0.0;
     }
+
+    /**
+     *
+     */
+    public Order(int id, List<Product> products, int numReferences, double weight, long dueDate, long arrivalTime,
+                 double serviceTime, double completionTime) {
+        super();
+        this.id = id;
+        this.products = products;
+        this.numReferences = numReferences;
+        this.weight = weight;
+        this.dueDate = dueDate;
+        this.arrivalTime = arrivalTime;
+        this.serviceTime = serviceTime;
+        this.completionTime = completionTime;
+    }
+
 
     /**
      * Adds a product to the order. Throws an exception if the maximum number

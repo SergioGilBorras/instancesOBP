@@ -128,7 +128,7 @@ public class InstancesLoaderHenn {
         List<Aisles> aisles = new ArrayList<>();
 
         // Locate layout and order files
-        File folder = new File("./Warehouses_instances/legacy/W5_Henn/" + consoleInfo.getItemsLocationString());
+        File folder = new File("./Warehouses_instances/legacy/W5A_Henn/" + consoleInfo.getItemsLocationString());
         if (!folder.isDirectory()) {
             System.out.println("Error: The entered path is not a valid directory " + folder.getAbsolutePath());
         } else if (folder.listFiles() == null) {
@@ -136,11 +136,11 @@ public class InstancesLoaderHenn {
         } else {
             for (final File fileEntry : Objects.requireNonNull(folder.listFiles())) {
                 if (!fileEntry.isDirectory() && fileEntry.getName().startsWith("sett" + consoleInfo.getSettingNumber())) {
-                    layoutFile = "./Warehouses_instances/legacy/W5_Henn/" + consoleInfo.getItemsLocationString() + "/" + fileEntry.getName();
+                    layoutFile = "./Warehouses_instances/legacy/W5A_Henn/" + consoleInfo.getItemsLocationString() + "/" + fileEntry.getName();
                 }
 
                 if (!fileEntry.isDirectory() && (fileEntry.getName().startsWith(consoleInfo.getSettingNumber() + "s") || fileEntry.getName().startsWith(consoleInfo.getSettingNumber() + "l"))) {
-                    orderFile = "./Warehouses_instances/legacy/W5_Henn/" + consoleInfo.getItemsLocationString() + "/" + fileEntry.getName();
+                    orderFile = "./Warehouses_instances/legacy/W5A_Henn/" + consoleInfo.getItemsLocationString() + "/" + fileEntry.getName();
                 }
             }
         }
@@ -255,8 +255,9 @@ public class InstancesLoaderHenn {
         }
 
         // Construct warehouse object
-        instanceName = consoleInfo.toStringShort();
+
         warehouse = new Warehouse(numberOfOrders, numberOfAisles, numberOfItems, depotPosition, itemsLocation, shelfLength, shelfWidth, aisleWidth, workerCapacity, pickingTime, outsideTurnTime, insideTurnTime, numberOfSlots, aisles, orders);
+        instanceName = consoleInfo.toStringInstanceName(warehouse);
     }
 
     /**
