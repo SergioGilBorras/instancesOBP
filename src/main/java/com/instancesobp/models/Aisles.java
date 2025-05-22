@@ -36,22 +36,22 @@ public class Aisles implements Serializable {
     /**
      * The unique identifier of the aisle.
      */
-    private final int aisleId;
+    private int aisleId;
 
     /**
      * The distance from the origin to the right side of the aisle.
      */
-    private final double distanceFromOriginRight;
+    private  double distanceFromOriginRight;
 
     /**
      * The distance from the origin to the left side of the aisle.
      */
-    private final double distanceFromOriginLeft;
+    private  double distanceFromOriginLeft;
 
     /**
      * The side of the aisle from depot (e.g., left = -1 ; center = 0 ; right = 1).
      */
-    private final int side;
+    private  int side;
 
     /**
      * Constructs an Aisles object with the specified parameters.
@@ -66,6 +66,10 @@ public class Aisles implements Serializable {
         this.distanceFromOriginRight = distanceFromOriginRight;
         this.distanceFromOriginLeft = distanceFromOriginLeft;
         this.side = side;
+    }
+
+
+    public Aisles() {
     }
 
     /**

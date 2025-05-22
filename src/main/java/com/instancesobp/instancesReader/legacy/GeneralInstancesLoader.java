@@ -234,19 +234,11 @@ public class GeneralInstancesLoader {
                 }
                 System.out.println(" -- Cargando instancias order tipo: " + consoleInfo.getOrderTypeString());
 
-
-
                 consoleInfo.setExampleNumber(3); // Arbex example
                 File carpeta = new File(sb.toString());
                 if (carpeta.isDirectory()) {
                     // Obtener la lista de archivos en la carpeta
-                    String[] archivos = carpeta.list();/*new FilenameFilter() {
-                        @Override
-                        public boolean accept(File dir, String name) {
-                            // Filtrar solo archivos (no directorios)
-                            return new File(dir, name).isFile();
-                        }
-                    });*/
+                    String[] archivos = carpeta.list();
 
                     // Verificar si hay archivos en la carpeta
                     if (archivos != null) {
@@ -270,4 +262,86 @@ public class GeneralInstancesLoader {
 
         return arbexInstances;
     }
+
+    /**
+     * Retrieves all instances for the JCR example.
+     *
+     * @return A list of JCR instances.
+     */
+    public ArrayList<InstancesLoaderFromConsoleInfo> getAllInstances258JCR(){
+        ArrayList<InstancesLoaderFromConsoleInfo> jcrInstances = new ArrayList<>();
+        String ruta = "./Warehouses_instances/legacy/W7_258JCR";
+        File carpeta = new File(ruta);
+
+        if (carpeta.isDirectory()) {
+            String[] archivos = carpeta.list();
+
+            if (archivos != null) {
+                for (String archivo : archivos) {
+                    if (archivo.endsWith(".xlsx") && !archivo.equals("picking line.xlsx")) {
+                        ReadConsoleInfo consoleInfo = new ReadConsoleInfo();
+                        consoleInfo.setExampleNumber(4); // JCR example
+                        consoleInfo.setInstanceFileName(archivo);
+
+                        //System.out.println("Cargando archivo: " + archivo); // debug
+                        jcrInstances.add(new InstancesLoaderFromConsoleInfo(consoleInfo));
+                    }
+                }
+            } else {
+                System.out.println("La carpeta está vacía o no se pudo acceder a ella.");
+            }
+        } else {
+            System.out.println("La ruta proporcionada no es una carpeta.");
+        }
+
+        return jcrInstances;
+    }
+
+
+    public ArrayList<InstancesLoaderFromConsoleInfo> getAllInstancesOBSPPS() {
+        ArrayList<InstancesLoaderFromConsoleInfo> obsppsInstances = new ArrayList<>();
+        ReadConsoleInfo consoleInfo = new ReadConsoleInfo();
+
+        String basePath = "./Warehouses_instances/legacy/W8_OBSPPS/";
+        String[] problemTypes = { "SmallProblemClasses", "LargeProblemClasses" };
+
+        for (String problemType : problemTypes) {
+            consoleInfo.setProblemClassString(problemType);  // Guardamos tipo de orden
+            System.out.println(" -- Cargando instancias tipo: " + problemType);
+
+            File tipoDir = new File(basePath + problemType);
+            if (tipoDir.isDirectory()) {
+                File[] subDirs = tipoDir.listFiles(File::isDirectory);
+                if (subDirs != null) {
+                    for (File subDir : subDirs) {
+                        consoleInfo.setNumberClassString(subDir.getName()+"/");
+                        File[] instanceFiles = subDir.listFiles((dir, name) -> !name.equalsIgnoreCase("readme.txt"));
+                        if (instanceFiles != null) {
+                            for (File instanceFile : instanceFiles) {
+
+                                consoleInfo.setInstanceFileName(instanceFile.getName());
+                                consoleInfo.setExampleNumber(5); // OBS_PPS example
+                                obsppsInstances.add(new InstancesLoaderFromConsoleInfo(consoleInfo));
+
+                                // Mostrar nombre del archivo guardado
+                                //System.out.println("   -> Añadido archivo: " + instanceFile.getName());
+                            }
+                        } else {
+                            System.out.println("No se pudieron listar archivos de: " + subDir.getName());
+                        }
+                    }
+                } else {
+                    System.out.println("No se pudieron listar subdirectorios de: " + tipoDir.getName());
+                }
+            } else {
+                System.out.println("Ruta no válida o no es directorio: " + tipoDir.getPath());
+            }
+        }
+
+        return obsppsInstances;
+    }
+
+
+
+
 }

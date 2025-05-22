@@ -210,4 +210,12 @@ public class Product implements Cloneable, Serializable {
     public double getWeight() {
         return weight;
     }
+
+    /**
+     *
+     * @param weight
+     */
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
 }

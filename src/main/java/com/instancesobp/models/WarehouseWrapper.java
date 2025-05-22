@@ -21,106 +21,49 @@ public class WarehouseWrapper {
     @JsonProperty("InstanceSet")
     private List<InstanceSet> instanceSet;
 
+
+    // Constructor sin argumentos
+    public WarehouseWrapper() {
+    }
+
+
     public WarehouseWrapper(Warehouse warehouse, String instancia) {
         this.nameInstanceSet = instancia;
         this.url = "";
         this.papers = List.of();
         this.instanceSet = List.of(new InstanceSet(warehouse));
     }
-}
 
-class Layout {
-    @JsonProperty("numberOfAisles")
-    private int numberOfAisles;
+    public List<InstanceSet> getInstanceSet() {
+        return instanceSet;
+    }
 
-    @JsonProperty("numberOfItems")
-    private int numberOfItems;
+    public void setInstanceSet(List<InstanceSet> instanceSet) {
+        this.instanceSet = instanceSet;
+    }
 
-    @JsonProperty("numberOfSlots")
-    private int numberOfSlots;
+    public String getNameInstanceSet() {
+        return nameInstanceSet;
+    }
 
-    @JsonProperty("depotPlacement")
-    private int depotPlacement;
+    public void setNameInstanceSet(String nameInstanceSet) {
+        this.nameInstanceSet = nameInstanceSet;
+    }
 
-    @JsonProperty("orderLocation")
-    private int orderLocation = 0; // Valor por defecto
+    public List<String> getPapers() {
+        return papers;
+    }
 
-    @JsonProperty("shelfLength")
-    private double shelfLength;
+    public void setPapers(List<String> papers) {
+        this.papers = papers;
+    }
 
-    @JsonProperty("shelfWidth")
-    private double shelfWidth;
+    public String getUrl() {
+        return url;
+    }
 
-    @JsonProperty("aisleWidth")
-    private double aisleWidth;
-
-    @JsonProperty("crossAisles")
-    private int crossAisles;
-
-    @JsonProperty("workerCapacity")
-    private double workerCapacity;
-
-    @JsonProperty("pickingTime")
-    private double pickingTime;
-
-    @JsonProperty("outsideTurnTime")
-    private double outsideTurnTime;
-
-    @JsonProperty("insideTurnTime")
-    private double insideTurnTime;
-
-    @JsonProperty("travelSpeed")
-    private double travelSpeed;
-
-    @JsonProperty("aisles")
-    private List<Aisles> aisles;
-
-    @JsonProperty("pickers")
-    private List<Picker> pickers;
-
-    public Layout(Warehouse warehouse) {
-        this.numberOfAisles = warehouse.getNumberOfAisles();
-        this.numberOfItems = warehouse.getNumberOfItems();
-        this.numberOfSlots = warehouse.getNumberOfSlots();
-        this.depotPlacement = warehouse.getDepotPlacement();
-        this.shelfLength = warehouse.getShelfLength();
-        this.shelfWidth = warehouse.getShelfWidth();
-        this.aisleWidth = warehouse.getAisleWidth();
-        this.crossAisles = warehouse.getCrossAisles();
-        this.workerCapacity = warehouse.getWorkerCapacity();
-        this.pickingTime = warehouse.getPickingTime();
-        this.outsideTurnTime = warehouse.getOutsideTurnTime();
-        this.insideTurnTime = warehouse.getInsideTurnTime();
-        this.travelSpeed = 1.0;
-        this.aisles = warehouse.getAisles();
-        this.pickers = warehouse.getPickers();
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
 
-class Orders {
-    @JsonProperty("numOrders")
-    private int numOrders;
-
-    @JsonProperty("OrderList")
-    private List<Order> orderList;
-
-    public Orders(Warehouse warehouse) {
-        this.numOrders = warehouse.getNumberOfOrders();
-        this.orderList = warehouse.getOrders();
-    }
-}
-
-@JsonPropertyOrder({ "Layout", "Orders" }) // Especificamos el orden
-class InstanceSet {
-
-    @JsonProperty("Layout")
-    private List<Layout> layout;
-
-    @JsonProperty("Orders")
-    private List<Orders> orders;
-
-    public InstanceSet(Warehouse warehouse) {
-        this.layout = List.of(new Layout(warehouse));
-        this.orders = List.of(new Orders(warehouse));
-    }
-}

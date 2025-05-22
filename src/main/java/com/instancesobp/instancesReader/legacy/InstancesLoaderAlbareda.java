@@ -238,7 +238,7 @@ public class InstancesLoaderAlbareda {
         }
 
         // Construct warehouse object
-        instanceName = consoleInfo.toStringShort();
+
         warehouse = new Warehouse(
                 numberOfOrders,
                 numberOfAisles,
@@ -256,5 +256,6 @@ public class InstancesLoaderAlbareda {
                 aisles,
                 orders
         );
+        instanceName = consoleInfo.toStringInstanceName(warehouse);
     }
 }

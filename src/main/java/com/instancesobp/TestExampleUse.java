@@ -22,6 +22,7 @@ import com.instancesobp.batchingAlgorithm.constructiveHeuristic.BasicConstructiv
 import com.instancesobp.batchingAlgorithm.constructiveHeuristic.CWSavingConstructive;
 import com.instancesobp.batchingAlgorithm.sortOrderList.SortByWeight;
 import com.instancesobp.evaluationResults.graphics.Graphics;
+import com.instancesobp.instancesReader.json.JsonLoader;
 import com.instancesobp.instancesReader.legacy.InstancesLoaderFromConsoleInfo;
 import com.instancesobp.instancesReader.legacy.GeneralInstancesLoader;
 import com.instancesobp.models.Batch;
@@ -63,8 +64,9 @@ public class TestExampleUse {
      * @param args the command line arguments (not used).
      */
     public static void main(String[] args) {
-        //EvaluateAllInstances();
-        EvaluateInstanceGraphics();
+        EvaluateAllInstances();
+        //EvaluateAllJson();
+        //EvaluateInstanceGraphics();
     }
 
     /**
@@ -76,44 +78,95 @@ public class TestExampleUse {
 
         GeneralInstancesLoader generalInstancesLoader = new GeneralInstancesLoader();
 
-        //ArrayList<String> instanciasL = new ArrayList<>();
-        //instanciasL.add("A_W1_50_000");
-        //instanciasL.add("A_W2_50_000");
-        //for (InstancesLoader instancesLoader : listInstancesLoader.getInstancesByName(instanciasL)) {
-        double final_solution = 0;
-        for (InstancesLoaderFromConsoleInfo instancesLoaderFromConsoleInfo : generalInstancesLoader.getAllInstancesArbex()) {
-            System.out.println("Instancia: " + instancesLoaderFromConsoleInfo.getName());
+        // Expresión regular para excluir los formatos no deseados
+        //String excludedPattern = "ARB_W6A_RND_(500|1000|2000|5000)_\\d+";
+
+        double finalSolution = 0;
+
+        for (InstancesLoaderFromConsoleInfo instancesLoaderFromConsoleInfo : generalInstancesLoader.getAllInstancesOBSPPS()) {
+            String instanceName = instancesLoaderFromConsoleInfo.getName();
+
+            // Evitar los formatos no deseados
+           // if (instanceName.matches(excludedPattern)) {
+             //   System.out.println("Instancia excluida: " + instanceName);
+              //  continue;
+           // }
+
+            System.out.println("Instancia: " + instanceName);
 
             Warehouse warehouse = instancesLoaderFromConsoleInfo.getWarehouse();
             warehouse.setPickingTime(0);
-
 
             List<Order> LO = warehouse.getOrders();
 
             try {
                 ObjectiveFunction objectiveFunction = new PickingTime(warehouse, selectAlgorithm(RoutingAlgorithmSelector.RoutingAlgorithmType.COMBINED, warehouse));
-
                 CWSavingConstructive basicConstructive = new CWSavingConstructive(warehouse, objectiveFunction);
 
-
                 long time = System.currentTimeMillis();
-
                 List<Batch> batchList = basicConstructive.run(LO);
                 double solution = objectiveFunction.run(batchList);
-                System.out.println(instancesLoaderFromConsoleInfo.getName() + ";" + solution + ";" + (System.currentTimeMillis() - time));
-                final_solution += solution;
+                System.out.println(instanceName + ";" + solution + ";" + (System.currentTimeMillis() - time));
+                finalSolution += solution;
 
                 validateSolution(warehouse, batchList);
 
             } catch (Exception ex) {
                 System.err.println("Error!! Execute.main() " + ex.getMessage());
-                //ex.printStackTrace();
             }
-
         }
-        System.out.println("FINAL:: " + final_solution);
 
+        System.out.println("FINAL:: " + finalSolution);
     }
+
+
+    /**
+     * This method evaluates all Json in the given path and calculates the
+     * objective function for each instance.
+     * It prints the results to the console.
+     */
+    private static void EvaluateAllJson() {
+        JsonLoader jsonLoader = new JsonLoader();
+        jsonLoader.run();
+
+        List<JsonLoader.WarehouseInstance> warehouseInstances = jsonLoader.getWarehouseInstances();
+
+        // Expresión regular para excluir los números 200, 500, 1000, 2000 y 5000
+        String excludedPattern = "ARB_W6A_RND_(500|1000|2000|5000)_\\d+_ID\\d+\\.json";
+
+        double finalSolution = warehouseInstances.parallelStream()
+                .filter(warehouseInstance -> !warehouseInstance.getName().matches(excludedPattern))
+                .mapToDouble(warehouseInstance -> {
+                    String instanceName = warehouseInstance.getName();
+                    Warehouse warehouse = warehouseInstance.getWarehouse();
+                    warehouse.setPickingTime(0);
+
+                    List<Order> LO = warehouse.getOrders();
+
+                    try {
+                        ObjectiveFunction objectiveFunction = new PickingTime(warehouse, selectAlgorithm(RoutingAlgorithmSelector.RoutingAlgorithmType.COMBINED, warehouse));
+                        CWSavingConstructive basicConstructive = new CWSavingConstructive(warehouse, objectiveFunction);
+
+                        long startTime = System.currentTimeMillis();
+                        List<Batch> batchList = basicConstructive.run(LO);
+                        double solution = objectiveFunction.run(batchList);
+                        long endTime = System.currentTimeMillis();
+
+                        System.out.println(instanceName + ";" + solution + ";" + (endTime - startTime));
+
+                        validateSolution(warehouse, batchList);
+
+                        return solution;
+                    } catch (Exception ex) {
+                        System.err.println("Error!! Execute.main() " + ex.getMessage());
+                        return 0;
+                    }
+                })
+                .sum();
+
+        System.out.println("FINAL:: " + finalSolution);
+    }
+
 
     /**
      * This method evaluates a specific instance and generates a
@@ -122,7 +175,7 @@ public class TestExampleUse {
     private static void EvaluateInstanceGraphics() {
 
         GeneralInstancesLoader LIL = new GeneralInstancesLoader();
-        InstancesLoaderFromConsoleInfo IL = LIL.getAllInstancesArbex().get(143);//getAllInstancesHENN().get(0);//getInstanceByName("A_W4_50_060");
+        InstancesLoaderFromConsoleInfo IL = LIL.getAllInstancesOBSPPS().get(10);//getAllInstancesHENN().get(0);//getInstanceByName("A_W4_50_060");
         if (IL != null) {
             System.out.println("Instancia: " + IL.getName());
 

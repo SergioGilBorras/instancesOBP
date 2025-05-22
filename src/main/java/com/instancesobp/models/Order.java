@@ -124,6 +124,9 @@ public class Order implements Cloneable, Serializable {
     }
 
 
+    public Order() {
+    }
+
     /**
      * Adds a product to the order. Throws an exception if the maximum number
      * of product references is exceeded.
