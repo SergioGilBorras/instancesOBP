@@ -1,0 +1,3 @@
+https://github.com/jixiangwu1993/OBSPPS/blob/main/OBSPPS_instances.zip
+
+284-JCR-Order batching and sequencing for minimising the total order completion time in pick-and-sort warehouses.pdf

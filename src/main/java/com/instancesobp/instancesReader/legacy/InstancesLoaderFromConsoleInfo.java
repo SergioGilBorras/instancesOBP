@@ -67,6 +67,19 @@ public class InstancesLoaderFromConsoleInfo {
             warehouse = arbexLoader.getWarehouse();
             instanceName = arbexLoader.getName();
             warehouse.setInstanceName(instanceName);
+        } else if (consoleInfo.getExampleNumber()==4) {
+            InstanceLoader258JCR jcrLoader=new InstanceLoader258JCR(consoleInfo);
+            jcrLoader.run();
+            warehouse= jcrLoader.getWarehouse();
+            instanceName=jcrLoader.getInstanceName();
+            warehouse.setInstanceName(instanceName);
+        }
+        else if(consoleInfo.getExampleNumber()==5){
+            InstancesLoaderOBSPPS obsLoader=new InstancesLoaderOBSPPS(consoleInfo);
+            obsLoader.run();
+            warehouse=obsLoader.getWarehouse();
+            instanceName= obsLoader.getInstanceName();
+            warehouse.setInstanceName(instanceName);
         }
     }
 

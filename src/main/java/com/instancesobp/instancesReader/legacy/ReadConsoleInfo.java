@@ -69,7 +69,7 @@ public class ReadConsoleInfo {
     private String instanceNumber;
 
     /**
-     * Example number to select (1 for Albareda, 2 for Henn, 3 for Arbex).
+     * Example number to select (1 for Albareda, 2 for Henn, 3 for Arbex, 4 for JCR).
      */
     private int exampleNumber;
 
@@ -102,6 +102,20 @@ public class ReadConsoleInfo {
     private String orderTypeString;
 
     private String instanceName;
+
+    private String orderNumberString;
+
+    private int problemClass;
+
+    private String problemClassString;
+
+    private int numberClass;
+
+    private String numberClassString;
+
+    private int numberInstanceOBSPPS;
+
+    private String numberInstanceOBSPPS_String;
 
     /**
      * Default constructor for the `ReadConsoleInfo` class.
@@ -188,6 +202,23 @@ public class ReadConsoleInfo {
             }
 
 
+        } else if (exampleNumber == 4) {
+            this.selectOrdersNumberJCR();
+            ordersNumberToString();
+
+
+
+        } else if (exampleNumber==5) {
+            this.selectProblemClassType();
+
+            selectClassNumber(problemClass);
+
+            problemClassTypeToName();
+            classNumberToString();
+
+            selectInstanceNumber(problemClass);
+            instanceNumberToString();
+
         }
 
         this.selectOnlineTest();
@@ -195,6 +226,39 @@ public class ReadConsoleInfo {
             this.selectNumInitOrders();
         }
     }
+
+
+
+
+    private void ordersNumberToString() {
+        switch (ordersNumber){
+            case 60: this.orderNumberString="orderset_new_60-12.xlsx";
+                break;
+            case 80: this.orderNumberString="orderset_new_80-16.xlsx";
+                break;
+            case 100: this.orderNumberString="orderset_new_100-20.xlsx";
+                break;
+            case 150: this.orderNumberString="orderset_new_150-30.xlsx";
+                break;
+            case 200: this.orderNumberString="orderset_new_200-40.xlsx";
+                break;
+            case 600: this.orderNumberString="orderset_new_600.xlsx";
+                break;
+            case 800: this.orderNumberString="orderset_new_800.xlsx";
+                break;
+            case 1000: this.orderNumberString="orderset_new_1000.xlsx";
+                break;
+            case 1200: this.orderNumberString="orderset_new_1200.xlsx";
+                break;
+            case 1500: this.orderNumberString="orderset_new_1500.xlsx";
+                break;
+        }
+    }
+
+
+
+
+
 
     public void warehouseTypeToName() {
         switch (this.warehouseType){
@@ -372,6 +436,199 @@ public class ReadConsoleInfo {
         }
     }
 
+
+
+    public final void selectProblemClassType(){
+        System.out.println("Choose a type of ProblemClass (1[LargeProblemClass]-2[SmallProblemClass]): ");
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            int W = parseInt(br.readLine());
+            if (W < 1 || W > 2) {
+                System.out.println("Error: Enter a valid number between 1-2.");
+                selectProblemClassType();
+            } else {
+                problemClass = W;
+            }
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Enter a valid number. " + e.getMessage());
+            selectProblemClassType();
+        }
+    }
+
+
+    public void problemClassTypeToName() {
+        switch (this.problemClass){
+            case 1:
+                this.problemClassString="LargeProblemClasses";
+                break;
+            case 2:
+                this.problemClassString="SmallProblemClasess";
+                break;
+        }
+    }
+
+    public final void selectClassNumber(int problemClass){
+        if (problemClass==1){
+            System.out.println("Choose a number of Class (1-15): ");
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+                int W = parseInt(br.readLine());
+                if (W < 1 || W > 15) {
+                    System.out.println("Error: Enter a valid number between 1-15.");
+                    selectProblemClassType();
+                } else {
+                    numberClass= W;
+                }
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Enter a valid number. " + e.getMessage());
+                selectProblemClassType();
+            }
+        }else if(problemClass==2){
+            System.out.println("Choose a number of Class (1-10): ");
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+                int W = parseInt(br.readLine());
+                if (W < 1 || W > 10) {
+                    System.out.println("Error: Enter a valid number between 1-10.");
+                    selectProblemClassType();
+                } else {
+                    numberClass= W;
+                }
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Enter a valid number. " + e.getMessage());
+                selectProblemClassType();
+            }
+        }
+    }
+
+
+    public void classNumberToString(){
+        if (problemClass==1){
+            switch (numberClass){
+                case 1:this.numberClassString="Class 1 (800,1)";
+                    break;
+                case 2:this.numberClassString="Class 2 (800,10)";
+                    break;
+                case 3:this.numberClassString="Class 3 (800, 20)";
+                    break;
+                case 4:this.numberClassString="Class 4 (900,1)";
+                    break;
+                case 5:this.numberClassString="Class 5 (900,10)";
+                    break;
+                case 6:this.numberClassString="Class 6 (900, 20)";
+                    break;
+                case 7:this.numberClassString="Class 7 (1000,1)";
+                    break;
+                case 8:this.numberClassString="Class 8 (1000,10)";
+                    break;
+                case 9:this.numberClassString="Class 9 (1000,20)";
+                    break;
+                case 10:this.numberClassString="Class 10 (1100,1)";
+                    break;
+                case 11:this.numberClassString="Class 11 (1100,10)";
+                    break;
+                case 12:this.numberClassString="Class 12 (1100, 20)";
+                    break;
+                case 13:this.numberClassString="Class 13 (1200,1)";
+                    break;
+                case 14:this.numberClassString="Class 14 (1200,10)";
+                    break;
+                case 15:this.numberClassString="Class 15 (1200, 20)";
+                    break;
+            }
+        } else if (problemClass==2) {
+            switch (numberClass){
+                case 1:this.numberClassString="Class 1 (50, 1)";
+                    break;
+                case 2:this.numberClassString="Class 2 (50, 3)";
+                    break;
+                case 3:this.numberClassString="Class 3 (100, 1)";
+                    break;
+                case 4:this.numberClassString="Class 4 (100, 5)";
+                    break;
+                case 5:this.numberClassString="Class 5 (150, 1)";
+                    break;
+                case 6:this.numberClassString="Class 6 (150, 8)";
+                    break;
+                case 7:this.numberClassString="Class 7 (200, 1)";
+                    break;
+                case 8:this.numberClassString="Class 8 (200, 10)";
+                    break;
+                case 9:this.numberClassString="Class 9 (250, 2)";
+                    break;
+                case 10:this.numberClassString="Class 10 (250, 13)";
+                    break;
+            }
+        }
+    }
+
+    public final void selectInstanceNumber(int problemClass){
+        if (problemClass==1){
+            System.out.println("Choose a number of Instance (1-10): ");
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+                int W = parseInt(br.readLine());
+                if (W < 1 || W > 10) {
+                    System.out.println("Error: Enter a valid number between 1-10.");
+                    selectProblemClassType();
+                } else {
+                    numberInstanceOBSPPS= W;
+                }
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Enter a valid number. " + e.getMessage());
+                selectProblemClassType();
+            }
+        }else if(problemClass==2){
+            System.out.println("Choose a number of Instance (1-5): ");
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+                int W = parseInt(br.readLine());
+                if (W < 1 || W > 5) {
+                    System.out.println("Error: Enter a valid number between 1-5.");
+                    selectProblemClassType();
+                } else {
+                    numberInstanceOBSPPS= W;
+                }
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Enter a valid number. " + e.getMessage());
+                selectProblemClassType();
+            }
+        }
+    }
+
+    public final void instanceNumberToString(){
+        switch (numberInstanceOBSPPS){
+            case 1:this.numberInstanceOBSPPS_String="Instance 1.txt";
+                break;
+            case 2:this.numberInstanceOBSPPS_String="Instance 2.txt";
+                break;
+            case 3:this.numberInstanceOBSPPS_String="Instance 3.txt";
+                break;
+            case 4:this.numberInstanceOBSPPS_String="Instance 4.txt";
+                break;
+            case 5:this.numberInstanceOBSPPS_String="Instance 5.txt";
+                break;
+            case 6:this.numberInstanceOBSPPS_String="Instance 6.txt";
+                break;
+            case 7:this.numberInstanceOBSPPS_String="Instance 7.txt";
+                break;
+            case 8:this.numberInstanceOBSPPS_String="Instance 8.txt";
+                break;
+            case 9:this.numberInstanceOBSPPS_String="Instance 9.txt";
+                break;
+            case 10:this.numberInstanceOBSPPS_String="Instance 10.txt)";
+                break;
+        }
+    }
+
+
+
+
     public final void selectTypeOrder(){
         System.out.println("Choose a type of warehouse (1[largeInstances]-2[smallInstances]): ");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
@@ -392,13 +649,13 @@ public class ReadConsoleInfo {
 
     /**
      * Prompts the user to select an example number.
-     * The method validates the input to ensure it is within the valid range (1-2).
+     * The method validates the input to ensure it is within the valid range (1-5).
      */
     public final void selectExampleNumber() {
-        System.out.println("Choose an example number (1[Albareda]-2[Henn]-3[Arbex]): ");
+        System.out.println("Choose an example number (1[Albareda]-2[Henn]-3[Arbex]-4[258-JCR]-5[OBSPPS]): ");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int W = parseInt(br.readLine());
-            if (W < 1 || W > 3) {
+            if (W < 1 || W > 5) {
                 System.out.println("Error: Enter a valid number between 1-3.");
                 selectExampleNumber();
             } else {
@@ -472,6 +729,28 @@ public class ReadConsoleInfo {
         }
     }
 
+
+    /**
+     * Prompts the user to select the number of batches.
+     */
+    public final void selectOrdersNumberJCR() {
+        System.out.println("Choose a number of orders (60,80,100,150,200,600,800,1000,1200,1500): ");
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            int W = parseInt(br.readLine());
+            if (W != 60 &&  W != 80 && W!= 100 && W!= 150 && W != 200 && W != 600 && W != 800 && W!= 1000 && W!= 1200 && W!= 1500 ) {
+                System.out.println("Error: Enter a valid number between (60,80,100,150,200,600,800,1000,1200,1500).");
+                selectOrdersNumberJCR();
+            } else {
+                ordersNumber = W;
+            }
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Enter a valid number. " + e.getMessage());
+            selectOrdersNumberJCR();
+        }
+    }
+
     /**
      * Gets the instance number in Albareda instances.
      * [000, 030, 060, 090]
@@ -494,7 +773,7 @@ public class ReadConsoleInfo {
 
     /**
      * Gets the example number.
-     * [1 for Albareda, 2 for Henn, 3 for Arbex]
+     * [1 for Albareda, 2 for Henn, 3 for Arbex, 4 for JCR, 5 for OBSPPS]
      *
      * @return The example number as an integer.
      */
@@ -504,7 +783,7 @@ public class ReadConsoleInfo {
 
     /**
      * Sets the example number.
-     * [1 for Albareda, 2 for Henn, 3 for Arbex]
+     * [1 for Albareda, 2 for Henn, 3 for Arbex, 4 for JCR, 5 for OBSPPS]
      *
      * @param exampleNumber The example number to set.
      */
@@ -678,6 +957,18 @@ public class ReadConsoleInfo {
         this.warehouseType = warehouseType;
     }
 
+    public void setOrderNumberString(String orderNumberString) {
+        this.orderNumberString = orderNumberString;
+    }
+
+    public void setProblemClass(int problemClass) {
+        this.problemClass = problemClass;
+    }
+
+    public void setNumberClass(int numberClass) {
+        this.numberClass = numberClass;
+    }
+
     /**
      *
      * @return
@@ -692,6 +983,22 @@ public class ReadConsoleInfo {
     public String getInstanceFileName() {
         return this.instanceName;
     }
+
+    public String getOrderNumberString() {
+        return orderNumberString;
+    }
+
+    public int getProblemClass() {return problemClass;}
+
+    public String getProblemClassString() {return problemClassString;}
+
+    public String getNumberClassString() {return numberClassString;}
+
+    public String getNumberInstanceOBSPPS_String() {return numberInstanceOBSPPS_String;}
+
+    public void setProblemClassString(String problemClassString) {this.problemClassString = problemClassString;}
+
+    public void setNumberClassString(String numberClassString) {this.numberClassString = numberClassString;}
 
     /**
      * Returns a string representation of the instance, including all its attributes.
@@ -743,9 +1050,15 @@ public class ReadConsoleInfo {
         }else if(this.exampleNumber==3){
             sb.append("ARB_W6A_").append(Codigo.getTypeLocation(wh.getOrderLocation())).append("_")
                     .append(wh.getNumberOfOrders()).append("_").append((int)wh.getWorkerCapacity());
-        } else {
+        } else if(this.exampleNumber==2) {
             sb.append("H_W5A_").append(this.itemLocationString).append("_")
                     .append(wh.getNumberOfOrders()).append("_").append((int)wh.getWorkerCapacity());
+        } else if (this.exampleNumber==4) {
+            sb.append("JCR_W7_").append(Codigo.getTypeLocation(wh.getOrderLocation())).append("_")
+                    .append(wh.getNumberOfOrders()).append("_").append(wh.getWorkerCapacity());
+        } else if (this.exampleNumber==5) {
+            sb.append("OBSPPS_W8_").append(Codigo.getTypeLocation(wh.getOrderLocation())).append("_")
+                    .append(wh.getNumberOfOrders()).append("_").append(wh.getWorkerCapacity());
         }
 
         return sb.toString();

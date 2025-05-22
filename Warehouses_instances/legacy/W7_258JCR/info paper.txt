@@ -1,0 +1,5 @@
+https://github.com/Xchunf/order-instances
+
+258-JCR-A Heuristic Solution Approach to Order Batching and Sequencing for Manual Picking and Packing Lines considering Fatiguing Effect.pdf
+
+

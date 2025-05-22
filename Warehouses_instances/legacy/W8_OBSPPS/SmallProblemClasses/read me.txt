@@ -1,0 +1,16 @@
+There are 10 small problem classes. There are 5 specific instances in each small problem class. 
+Each txt document is a order list. It consists of a certain number of orders. Each order is a set of items. Each item is represented by its two-dimensional coordinates in warehouse. The first coordinate represents the aisle it is in, and the second represents the specific position of the aisle it is in.
+
+Other papameters are as follows:
+Classes	|J|	z	 L/W	D	Vt	tc / tp		q		O
+1	50	1	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+2	50	3	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+3	100	1	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+4	100	5	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+5	150	1	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+6	150	8	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+7	200	1	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+8	200	10	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+9	250	1	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+10	250	13	45/5	ABC	48	0.3/0.05	U (1, 9)	50
+

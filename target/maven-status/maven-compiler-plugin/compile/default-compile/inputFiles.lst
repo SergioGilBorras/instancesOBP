@@ -6,10 +6,12 @@ C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instance
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\Utils.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingAlgorithm\CombinedPlus.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\batchingAlgorithm\BatchingAlgorithm.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\InstanceSet.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Location.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Batch.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\TestArrivalTimeGenerator.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\LargestGap.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\json\GeneralJsonLoader.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingAlgorithm\RoutingAlgorithmSelector.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\Graphics.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\JPanelColor.java
@@ -21,6 +23,7 @@ C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingA
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\CombinedPlus.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\ReadConsoleInfo.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\ArrivalTimeLoader.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Orders.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\GeneralInstancesLoader.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\SumEarliness.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\MaxThroughoutTime.java
@@ -36,7 +39,9 @@ C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiv
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\PickingTime.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\json\InstanceToJson.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\batchingAlgorithm\constructiveHeuristic\CWSavingConstructive.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\InstanceLoader258JCR.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\SShape.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Layout.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\Configuration.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\SumTardiness.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingAlgorithm\RoutingAlgorithm.java
@@ -49,6 +54,7 @@ C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instance
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\RatliffAndRosenthal.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingAlgorithm\Largest_Gap.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Order.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\json\JsonLoader.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\Combined.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\SumAbsoluteDiffBatchTimes.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Aisles.java
