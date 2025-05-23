@@ -55,9 +55,11 @@ C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluati
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\routingAlgorithm\Largest_Gap.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Order.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\json\JsonLoader.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\InstancesLoaderOBSPPS.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\evaluationResults\graphics\algorithms\Combined.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\objectiveFunction\SumAbsoluteDiffBatchTimes.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Aisles.java
+C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\instancesReader\legacy\SqlInstanceGenerator.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\Product.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\TestExampleUse.java
 C:\Users\pablo\IdeaProjects\instancesOBP\src\main\java\com\instancesobp\models\WarehouseWrapper.java

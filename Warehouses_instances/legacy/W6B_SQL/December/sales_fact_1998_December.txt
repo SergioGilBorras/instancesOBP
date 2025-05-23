@@ -1,0 +1,1 @@
+product_id	time_id	customer_id	unit_sales

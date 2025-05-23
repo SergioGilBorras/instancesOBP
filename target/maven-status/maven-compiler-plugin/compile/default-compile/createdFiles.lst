@@ -1,9 +1,9 @@
-com\instancesobp\models\Order.class
-com\instancesobp\models\Batch.class
-com\instancesobp\models\Product.class
 com\instancesobp\evaluationResults\graphics\JPanelColor.class
-com\instancesobp\utils\Constants.class
 com\instancesobp\models\Warehouse.class
 com\instancesobp\instancesGenerator\ArrivalTimesGenerator.class
-com\instancesobp\evaluationResults\graphics\Utils.class
 com\instancesobp\models\Aisles.class
+com\instancesobp\models\Order.class
+com\instancesobp\utils\Constants.class
+com\instancesobp\evaluationResults\graphics\Utils.class
+com\instancesobp\models\Batch.class
+com\instancesobp\models\Product.class

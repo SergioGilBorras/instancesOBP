@@ -76,6 +76,13 @@
             <version>2.2.1</version>
         </dependency>
 
+        <!-- Dependencia para leer la base de datos en sql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+
     </dependencies>
 
     <build>
